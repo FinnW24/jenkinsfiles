@@ -12,7 +12,8 @@ pipeline{
                 git'https://github.com/FinnW24/maven-web-application.git'
             }
             }
-
+    }
+}
 stage('2.Mavenbuild'){
     steps{
         sh "echo validate,complie and perform Unittesting"
