@@ -13,11 +13,11 @@ pipeline{
             }
             }
     }
-stage('2.Mavenbuild'){
-    steps{
-        sh "echo validate,complie and perform Unittesting"
-        sh "echo unit testing must pass for artifacts to be build"
-        sh "mvn clean package" 
+        stage('2.Mavenbuild'){
+            steps{
+              sh "echo validate,complie and perform Unittesting"
+              sh "echo unit testing must pass for artifacts to be build"
+              sh "mvn clean package" 
 }
 }
 /*
